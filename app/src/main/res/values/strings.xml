@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">แจ้งเตือนทานยา</string>
+    <string name="action_settings">ตั้งค่า</string>
+    <string name="title_activity_main">แจ้งเตือนทานยา</string>
+    <string name="title_activity_new_pill">เพิ่มรายการยา</string>
+
+    <string name="pill_name">ชื่อยา</string>
+    <string name="pill_location">สถานที่จ่ายยา</string>
+    <string name="pill_for">ทานครั้งละ</string>
+    <string name="pill_detail">ข้อแนะนำ</string>
+    <string name="pill_disease">สำหรับรักษาโรค</string>
+
+    <string name="time_breakfas">อาหารเช้า</string>
+    <string name="time_lunch">อาหารเที่ยง</string>
+    <string name="time_dinner">อาหารเย็น</string>
+    <string name="time_night">ก่อนนอน</string>
+
+    <string name="btnSave">บันทึกข้อมูล</string>
+    <string name="event_day">กำหนดวันที่</string>
+    <string name="event_time">กำหนดเวลา</string>
+    <string name="event_name">ชื่อเรื่อง</string>
+    <string name="event_doc">ชื่อแพยท์</string>
+    <string name="event_location">สถานที่</string>
+
+
+    <string name="title_activity_new_event">เพิ่มนัดหมาย</string>
+    <string name="event_detail">รายละเอียด</string>
+    <string name="title_activity_add_event">เพิมรายกานัด</string>
+    <string name="title_activity_menu">แจ้งเตือนทานยา</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_event_list">รายการนัดหมาย</string>
+    <string name="title_activity_pill_list">รายการยา</string>
+    <string name="title_activity_pill_detail">รายละเอียดยา</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_time_setting">ตั้งค่าเวลาแจ้งเตือน</string>
+    <string name="setting_time_pill">ตั้งเวลาทานยา</string>
+    <string name="click_set_time">เลือกเวลา</string>
+    <string name="title_activity_event_screen">EventScreen</string>
+    <string name="title_activity_event_detail">รายละเอียดกนัดหมาย</string>
+    <string name="title_activity_main_recy">MainRecy</string>
+    <string name="title_activity_pill_screnn">PillScrenn</string>
+    <string name="title_activity_show_medicine">รายการยา</string>
+    <string name="title_activity_calendar">Calendar</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_info_pill">ความรู้เดียวกับยา</string>
+    <string name="info1">ยากินก่อนอาหาร ต้องกินก่อนครึ่ง- 1 ชั่วโมงด้วยธรรมชาติของยานั้นอาจจะถูกรบกวนการดูดซึมหากมีอาหารอยู่ด้วยหรือยาบางกลุ่มจะถูกทำลายด้วยน้ำย่อยและกรดหากกินพร้อมอาหารจึงต้องกินก่อนอาหาร</string>
+    <string name="info2">ยาหลังอาหาร หรือยาที่ต้องกินพร้อมอาหาร หากกินในขณะที่ท้องว่าง อาจเกิดอาการระคายเคืองในกระเพาะอาหาร-ลำไส้</string>
+    <string name="title_activity_new_event1">NewEvent1</string>
+    <string name="hourly">ทุกๆ ชม.</string>
+    <string name="set_hourly">กำหนดทานเป็นช่วง</string>
+    <string name="title_activity_main_pill">รายการยา</string>
+    <string name="title_activity_pill_hour_screen">แจ้งเตือน</string>
+    <string name="title_activity_main_event">รายการนัด</string>
+    <string name="pill_hourly">ตามช่วงเวลา</string>
+    <string name="title_activity_disease">DiseaseActivity</string>
+    <string name="title_activity_pill_history">PillHistoryActivity</string>
+
+    <string name="title_activity_list_pill">รายการยา</string>
+    <string name="title_activity_list_event">รายการนัด</string>
+
+    <string name="title_activity_new_doctor">เพิ่มข้อมูลแพทย์</string>
+    <string name="title_activity_list_doctor">รายชื่อแพทย์</string>
+    <string name="title_activity_detail_docter">รายละเอียด</string>
+    <string name="pill_doctor">ชื่อแพทย์</string>
+    <string name="title_activity_show_medicne_after">ShowMedicneAfter</string>
+    <string name="title_activity_setting_time">ตั้งเวลา</string>
+    <string name="title_activity_new_pill_hour">เพิ่มข้อมูลยา</string>
+</resources>

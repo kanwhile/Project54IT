@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="เลือกช่วงเวลา"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@android:color/background_light" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_time"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/layout_break">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/time_breakfas"
+                android:id="@+id/time_break"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_alignParentStart="true"
+                android:freezesText="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/imageView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/sunrise_100" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/layout_lunch">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/time_lunch"
+                android:id="@+id/time_lunch"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/text_size_medium"
+                android:freezesText="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:src="@drawable/summer_100"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/layout_dinner">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/time_dinner"
+                android:id="@+id/time_dinner"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/text_size_medium"
+                android:freezesText="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:src="@drawable/sunset_100"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/layout_night">
+
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/time_night"
+                android:id="@+id/time_night"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/text_size_medium"
+                android:freezesText="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView4"
+                android:src="@drawable/partly_cloudy_night_100"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

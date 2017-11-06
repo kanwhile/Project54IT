@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.projects.mypillapp.Alarm.PillHourScreen">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/img_screen_pill"
+            android:scaleType="centerCrop"
+            android:src="@drawable/medicine_bg" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#9000">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_pill"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FFF"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="120dp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 : 00"
+            android:id="@+id/txt_time"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/time_label_size"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13 มีนาคม 2557"
+            android:id="@+id/txt_date"
+            android:layout_below="@+id/txt_time"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/img_screen_event"
+            android:background="@color/colorPrimary"
+            android:layout_margin="2dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="แจ้งเตือนทายา"
+                    android:id="@+id/alarm_screen_name"
+                    android:layout_below="@+id/textView19"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="28dp"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="5" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:id="@+id/imageView6"
+                    android:layout_weight="1"
+                    android:src="@drawable/bell_ring_outline"
+                    android:scaleType="fitCenter"
+                    android:layout_margin="2dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="คุณมียาที่ต้องรับประทาน"
+                android:id="@+id/txt_screen_detail"
+                android:layout_below="@+id/textView25"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginBottom="20dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#02233a"></FrameLayout>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="ดูรายการยา"
+                android:id="@+id/txt_submit"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@android:color/background_light"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

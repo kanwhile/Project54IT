@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.NewPillActivity"
+    tools:showIn="@layout/activity_new_pill_hour">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_label"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:tint="@android:color/darker_gray" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="15"
+                android:id="@+id/edit_name"
+                android:layout_weight="5"
+                android:hint="@string/pill_name"
+                android:textSize="@dimen/text_size_large"
+                android:imeOptions="actionNext"
+                android:freezesText="true"
+                android:background="@android:color/transparent" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"></FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="setTextPill">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_action_contrast"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:tint="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/pill_for"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:freezesText="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/for_pill"
+                android:layout_weight="3"
+                android:gravity="end"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@android:color/background_dark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="setSelectType">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ชนิดยา"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:freezesText="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/type_pill"
+                android:layout_weight="3"
+                android:gravity="end"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@android:color/background_dark" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:nestedScrollingEnabled="false"
+            android:id="@+id/select_eat">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_bell"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:tint="@android:color/darker_gray"
+                android:padding="2dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="การแจ้งเตือน"
+                android:layout_weight="2.5"
+                android:gravity="left|center"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:freezesText="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/setEat"
+                android:layout_weight="3"
+                android:gravity="end"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@android:color/background_dark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/txt_eat"
+                android:textSize="@dimen/text_size_small"
+                android:layout_weight="5"
+                android:freezesText="true" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginTop="2dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linear_detail">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="setTextLocation">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_room"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:tint="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pill_location"
+                    android:layout_weight="2.5"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:freezesText="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/location_pill"
+                    android:layout_weight="2.5"
+                    android:gravity="end"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@android:color/background_dark"
+                    android:ems="30" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="setSelectDoctor">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_stethoscope"
+                    android:layout_gravity="center_vertical"
+                    android:tint="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pill_doctor"
+                    android:layout_weight="2"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:freezesText="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_doctor"
+                    android:layout_weight="3"
+                    android:gravity="end"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@android:color/background_dark" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="setTextDetail">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_receipt"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:tint="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pill_detail"
+                    android:layout_weight="2"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:freezesText="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pill_detail"
+                    android:layout_weight="3"
+                    android:gravity="end"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@android:color/background_dark" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

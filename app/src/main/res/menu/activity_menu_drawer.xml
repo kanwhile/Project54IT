@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_main" android:icon="@drawable/menu_home"
+            android:title="@string/app_name" />
+        <item android:id="@+id/nav_pill" android:icon="@drawable/menu_pilll"
+            android:title="รายการยา" />
+        <item android:id="@+id/nav_event" android:icon="@drawable/menu_calender"
+            android:title="รายการนัดหมาย" />
+        <item android:id="@+id/nav_disease" android:icon="@drawable/menu_doctor"
+            android:title="รายชื่อหมอ" />
+    </group>
+
+    <item android:title="อื่นๆ">
+        <menu>
+            <item android:id="@+id/nav_share" android:icon="@drawable/menu_information"
+                android:title="ความรู้เกี่ยวกับยา" />
+            <item android:id="@+id/nav_time" android:icon="@drawable/ic_settings_grey600_48dp"
+                android:title="ตั้งค่าเวลา" />
+        </menu>
+    </item>
+
+</menu>
